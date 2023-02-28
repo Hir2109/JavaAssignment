@@ -1,0 +1,13 @@
+.root{
+    -fx-font-size: 13pt;
+    -fx-font-weight: bold;
+    -fx-background-color: #4c4cfe;
+}
+
+.button:hover{
+    -fx-background-color: white;
+}
+
+AnchorPane {
+    -fx-background-color: blue;
+}
