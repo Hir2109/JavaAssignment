@@ -38,6 +38,7 @@ public class StudentController implements Initializable {
     private List<Student> students = new ArrayList<Student>();
 
     int buttonClicked =0;
+    //methods to change the student information
 
     @FXML
     void changeStudent(ActionEvent event){
@@ -46,9 +47,9 @@ public class StudentController implements Initializable {
             buttonClicked = 0;
         }
 
-        studentNumberLabel.setText(Integer.toString(students.get(buttonClicked).getStudentNumber()));
-        firstNameLabel.setText(students.get(buttonClicked).getFirstName());
-        lastNameLabel.setText(students.get(buttonClicked).getLastName());
+        studentNumberLabel.setText(Integer.toString(students.get(buttonClicked).getStudentNumber())); 
+        firstNameLabel.setText(students.get(buttonClicked).getFirstName()); //to change first name
+        lastNameLabel.setText(students.get(buttonClicked).getLastName());    //to change last name
         activitiesLabel.setText(students.get(buttonClicked).getFavouriteActivities().toString());
         myImage.setImage(students.get(buttonClicked).imagePath());
         
