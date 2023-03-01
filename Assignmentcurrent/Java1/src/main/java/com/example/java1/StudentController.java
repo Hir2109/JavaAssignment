@@ -67,7 +67,7 @@ public class StudentController implements Initializable {
         students.add(student3);
         studentNumberLabel.setText(Integer.toString(students.get(0).getStudentNumber()));
         firstNameLabel.setText(students.get(0).getFirstName());
-        lastNameLabel.setText(students.get(0).getFirstName());
+        lastNameLabel.setText(students.get(0).getLaststName());
 
 
 
